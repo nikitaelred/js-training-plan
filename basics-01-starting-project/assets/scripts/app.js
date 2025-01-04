@@ -56,7 +56,7 @@ function divide() {
   createLog("/", initialResult, enteredNumber);
   writeToLog("DIVIDE", initialResult, enteredNumber,currentResult);
 }
-
+/*this is comment */
 //Constants from vendor file
 addBtn.addEventListener("click", add);
 subtractBtn.addEventListener("click", subtract);
