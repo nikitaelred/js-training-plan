@@ -30,7 +30,7 @@ try {
   console.log(error);
   chosenMaxLife = 100;
   alert("you entered something wrong default value of 100 set");
-}
+} 
 
 let currentMonsterHealth = chosenMaxLife;
 let currentPlayerHealth = chosenMaxLife;
