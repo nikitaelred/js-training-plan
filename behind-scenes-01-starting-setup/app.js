@@ -1,5 +1,9 @@
+
 function getName(){
-  return prompt('Your Name','');
+  'use strict';
+  userName = 'function';
+ console.log(userName);
+  return false;
 }
 function greet(){
   const userName = getName();
@@ -27,7 +31,7 @@ greet();
 
 // greet();
 
-// 'use strict';
-// userName = 'Max';
-// console.log(userName);
+ 
+ userName = 'Max';
+ console.log(userName);
 
