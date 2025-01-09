@@ -81,8 +81,11 @@ console.log(listItems2); // live node list
 
 //Removing Dom Elements
 const btn = document.querySelector('button');
-//btn.remove(); 
-btn.parentElement.removeChild(btn);
+//btn.remove(); //Not supported in IE
+btn.parentElement.removeChild(btn); //Supports all browsers
+
+
+
 //button.addEventListener("click", () => {
   //   if (section.className === "red-bg visible") {
   //     section.className = "red-bg invisible";
