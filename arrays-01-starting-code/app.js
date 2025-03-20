@@ -72,57 +72,74 @@
 // console.log(maxIndex);
 
 //includes
-const testResults = [1, 4.5, 6, 7.9, 10, 34, 6.7, 5, -6, 10, 7, 9, 3];
-console.log(testResults.includes(10));
+////const testResults = [1, 4.5, 6, 7.9, 10, 34, 6.7, 5, -6, 10, 7, 9, 3];
+//console.log(testResults.includes(10));
 
 
 //foreach method
 
-const prices = [10.99,5.99,20,30,79.99];
-const tax = 0.19;
-const taxAdjustedPrices = [];
+// const prices = [10.99,5.99,20,30,79.99];
+// const tax = 0.19;
+// const taxAdjustedPrices = [];
 
-prices.forEach((price,idx,prices) => {
-    taxAdjustedPrices.push(price * (1 + tax));
-});
+// prices.forEach((price,idx,prices) => {
+//     taxAdjustedPrices.push(price * (1 + tax));
+// });
 
-console.log(taxAdjustedPrices);
+// console.log(taxAdjustedPrices);
 
 
 //map method
-const numbers = [65,44,12,4];
-const newArr = numbers.map((num,idx,numbers) => {
-    return num * 10;
-});
+// const numbers = [65,44,12,4];
+// const newArr = numbers.map((num,idx,numbers) => {
+//     return num * 10;
+// });
 
-console.log(newArr);
+// console.log(newArr);
 
 //sort method
 
-const sortedPrices = prices.sort((a,b) => {
-    if(a > b){
-        return 1;
-    }
-    else if(a === b){
-        return 0;
-    }
-    else{
-        return -1;
-    }
-});
+// const sortedPrices = prices.sort((a,b) => {
+//     if(a > b){
+//         return 1;
+//     }
+//     else if(a === b){
+//         return 0;
+//     }
+//     else{
+//         return -1;
+//     }
+// });
 
 //reverse
-console.log(sortedPrices.reverse());
+// console.log(sortedPrices.reverse());
 
 //filter
-const filteredArray = prices.filter((price, idx,prices) => {
-    return price > 6;
- });
-console.log(filteredArray);
+// const filteredArray = prices.filter((price, idx,prices) => {
+//     return price > 6;
+//  });
+// console.log(filteredArray);
 
 
-//reduce
-const sum = prices.reduce((prevValue, currentValue, curIndex, prices) => {
-    return prevValue + currentValue;
-}, 3);
-console.log(sum);
+// //reduce
+// const sum = prices.reduce((prevValue, currentValue, curIndex, prices) => {
+//     return prevValue + currentValue;
+// }, 3);
+// console.log(sum);
+
+
+// const data = 'new york;10.99;2000';
+// const transformedData = data.split(';');
+// console.log(transformedData);
+
+// const nameFragments = ['MAX','joy'];
+// const uName = nameFragments.join();
+// console.log(uName);
+
+// const copy = [...nameFragments];
+// console.log(copy,nameFragments);
+
+const nameData = ['max','kim'];
+const [firstName,lastName] = nameData;
+console.log(firstName,lastName);
+
