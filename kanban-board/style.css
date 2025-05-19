@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+#board {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.column {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.task {
+    background: #705bd1bf;
+    margin: 10px;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: grab;
+}
+.task span {
+    cursor: pointer;
+}
+.modal-content button {
+    background: #705bd1;
+    border: unset;
+    padding: 10px 38px;
+    color: #ffffff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.task.dragging {
+  opacity: 0.5;
+}
+
+.task-list {
+    height: 200px;
+    overflow: auto;
+}
+input.error {
+    border: 1px solid #ff0909 !important;
+}
+input.error::placeholder {
+  color: red;
+}
+
+#task-form {
+  margin-top: 20px;
+}
+.delete-btn {
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task span {
+  outline: none;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#modal input {
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+input#task-input {
+    background: #ffffff;
+    border: unset;
+    outline: unset;
+    height: 21px;
+    padding: 10px;
+    width: 342px;
+    margin-top: 40px;
+}
+button#add-task {
+    cursor: pointer;
+    background: #705bd1;
+    border: unset;
+    color: #fff;
+    padding: 11px 38px;
+    font-size: 15px;
+}
